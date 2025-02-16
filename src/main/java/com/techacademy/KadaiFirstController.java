@@ -14,7 +14,7 @@ public class KadaiFirstController {
 
     @GetMapping("/dayofweek/{val}")
     public String dispDayOfWeek(@PathVariable("val") String val) {
-        SimpleDateFormat dow = new SimpleDateFormat("yyyymmdd");
+        SimpleDateFormat dow = new SimpleDateFormat("yyyyMMdd");
         Date date;
         try {
             date = dow.parse(val);
